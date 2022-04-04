@@ -1,0 +1,45 @@
+.light-mode-header,
+.light-mode-footer {
+	background-color: $white;
+	color: $veryDarkBlueLightMode;
+}
+.dark-mode-header,
+.dark-mode-footer {
+	background-color: $darkBlue;
+	color: $white;
+}
+
+.light-mode-card {
+	background-color: $white;
+	color: $veryDarkBlueLightMode;
+}
+.dark-mode-card {
+	background-color: $darkBlue;
+	color: $white;
+}
+
+.light-mode-form {
+	background-color: $white;
+	color: $darkGray;
+	&::placeholder {
+		color: $darkGray;
+	}
+}
+
+.dark-mode-form {
+	background-color: $darkBlue;
+	color: $white;
+	&::placeholder {
+		color: $white;
+	}
+}
+
+.light-mode {
+	background-color: $veryLightGray;
+	color: $veryDarkBlueLightMode;
+}
+
+.dark-mode {
+	background-color: $veryDarkBlue;
+	color: $white;
+}

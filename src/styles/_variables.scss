@@ -1,0 +1,16 @@
+/****************************** COLORS ******************************/
+$darkBlue: hsl(209, 23%, 22%); // Dark Mode Elements
+$veryDarkBlue: hsl(207, 26%, 17%); // Dark Mode Background
+$veryDarkBlueLightMode: hsl(200, 15%, 8%); // Light Mode Text
+$darkGray: hsl(0, 0%, 52%); // Light Mode Input
+$veryLightGray: hsl(0, 0%, 92%); // Light Mode Background
+$white: hsl(0, 0%, 100%); // Dark Mode Text & Light Mode Elements
+
+/****************************** FONT ******************************/
+$fontFamily: 'Nunito Sans', sans-serif;
+$fontSizeGlobal: 1.4rem;
+
+/****************************** BREAKPOINTS ******************************/
+$mobile: 23.4375em; // 375px
+$tablet: 48em; // 768px
+$desktop: 64em; //1024px

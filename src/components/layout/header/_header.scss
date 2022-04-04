@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.header {
+	/*********** Mobile ***********/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0.8rem;
+	font-size: 1.2rem;
+
+	box-shadow: 0px 1px 7px 1px rgba(148, 148, 148, 0.75);
+	-webkit-box-shadow: 0px 1px 7px 1px rgba(148, 148, 148, 0.75);
+	-moz-box-shadow: 0px 1px 7px 1px rgba(148, 148, 148, 0.75);
+
+	/*********** Tablet - Desktop ***********/
+	@include tablet {
+		font-size: $fontSizeGlobal;
+		padding: 1 4rem;
+	}
+
+	&__title {
+		font-weight: 800;
+	}
+
+	&__darkmode {
+		display: flex;
+		cursor: pointer;
+
+		&__logo {
+			width: 1rem;
+			margin-right: 0.4rem;
+		}
+
+		&__text {
+			font-weight: 600;
+		}
+	}
+}

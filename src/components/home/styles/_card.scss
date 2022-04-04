@@ -1,0 +1,56 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.main__cards {
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+
+	&__card {
+		width: 20.5rem;
+		height: 30rem;
+		border-radius: 0.5rem;
+
+		&__image {
+			border-top-left-radius: 0.5rem;
+			border-top-right-radius: 0.5rem;
+			width: 100%;
+			object-fit: cover;
+			height: 12rem;
+		}
+
+		&__title,
+		&__description {
+			@include container;
+		}
+
+		&__title {
+			font-size: 1.3rem;
+		}
+		&__description {
+			font-size: 1.2rem;
+			&--title {
+				font-weight: 600;
+			}
+		}
+		&__button-container {
+			display: flex;
+			justify-content: center;
+		}
+		&__button {
+			display: flex;
+			border-radius: 0.5rem;
+			padding: 0.2rem;
+			border: 0.15rem solid #000;
+			color: $veryDarkBlueLightMode;
+			text-decoration: none;
+
+			&:hover {
+				background-color: $veryDarkBlue;
+				color: $white;
+			}
+		}
+	}
+}
